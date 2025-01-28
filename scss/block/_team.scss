@@ -1,0 +1,34 @@
+.team {
+  margin-bottom: 72px;
+}
+.team_content {
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  gap: 10px;
+}
+.team_block {
+  width: 100%;
+  padding: 17px 0;
+  border-top: 1px solid #36536b44;
+  border-bottom: 1px solid #36536b44;
+}
+.team_title {
+  @include mainText;
+}
+.team_number {
+  font-family: "DM Serif Display";
+  font-size: 56px;
+  color: #ba4270;
+}
+@media screen and (max-width: 680px) {
+  .team_content {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #36536b44;
+    border-bottom: 1px solid #36536b44;
+  }
+  .team_block {
+    border: none;
+  }
+}

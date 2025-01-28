@@ -1,0 +1,88 @@
+@mixin mainBtn {
+  color: #fbfcfe;
+  font-family: "Public Sans";
+  border: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+  border-radius: 24px;
+  background: #ba4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: #da6d97;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+}
+@mixin mainBtn_light {
+  color: #fbfcfe;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+  border-radius: 24px;
+  border: 1px solid #fbfcfe;
+  padding: 16px 32px;
+  background-color: transparent;
+  transition: all 0.3s;
+  &:hover {
+    color: #1b262f;
+    border-radius: 24px;
+    border: 1px solid #fbfcfe;
+    background: #fff;
+  }
+}
+@mixin mainBtn_dark {
+  color: #36536b;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+  padding: 15px 28px;
+  border-radius: 24px;
+  border: 1px solid #36536b;
+  transition: all 0.3s;
+  &:hover {
+    color: #fff;
+    border: 1px solid #36536b;
+    background: #36536b;
+  }
+}
+
+@mixin mainTitle {
+  color: #36536b;
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.369px;
+  @media screen and (max-width: 480px) {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.277px;
+  }
+}
+@mixin subTitle {
+  color: #36536b;
+  font-family: "DM Serif Display";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.246px;
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.277px;
+  }
+}
+@mixin mainText {
+  color: #6c8294;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}

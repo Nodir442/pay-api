@@ -1,0 +1,11 @@
+<svg width="768" height="286" viewBox="0 0 768 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Bitmap" opacity="0.15">
+<circle id="Mask" cx="383.5" cy="-188.5" r="474.5" fill="#36536B"/>
+<circle id="Mask Copy" cx="383.5" cy="-188.5" r="474.5" fill="#36536B"/>
+<mask id="mask0_0_2364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-91" y="-663" width="949" height="949">
+<circle id="Mask Copy_2" cx="383.5" cy="-188.5" r="474.5" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_2364)">
+</g>
+</g>
+</svg>

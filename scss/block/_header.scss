@@ -1,0 +1,115 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.header__logo {
+  margin-right: 60px;
+}
+.header__nav_list {
+  display: flex;
+  column-gap: 40px;
+}
+.header__link {
+  color: #36536b;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  opacity: 1;
+}
+.header__btn_block {
+  margin-right: 0;
+  margin-left: auto;
+}
+.header__btn {
+  @include mainBtn;
+}
+.header__burger {
+  width: 28px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/header_burger.svg);
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+
+.header__menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1b262fb5;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header__menu.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+}
+
+.header__menu_nav {
+  padding: 70px 50px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #36536b;
+  border: 2px solid #cee9ff7b;
+}
+
+.header__menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu_item {
+  margin-bottom: 15px;
+}
+
+.header__menu_item:last-child {
+  margin-bottom: 0;
+}
+
+.header__menu_item a {
+  color: #edf3f8;
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.header__menu_item a:hover {
+  color: #fff;
+  text-shadow: #000000 0px 0px 50px;
+}

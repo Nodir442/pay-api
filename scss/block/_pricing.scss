@@ -1,0 +1,136 @@
+.pricing {
+  padding-top: 160px;
+  background-image: url(../img/pricing_back.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.header__link_active {
+  color: #36536b;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+}
+.pricing__title {
+  @include mainTitle;
+  margin-bottom: 72px;
+}
+.pricing__block {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__box {
+  max-width: 350px;
+}
+.pricing__sub_title {
+  color: #ba4270;
+  font-family: "DM Serif Display";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.246px;
+  margin-bottom: 16px;
+}
+.pricing__text {
+  @include mainText;
+  color: #6c8294;
+  margin-bottom: 8px;
+}
+.pricing__price {
+  color: #36536b;
+  font-family: "DM Serif Display";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.431px;
+  margin-bottom: 24px;
+}
+.pricing__list {
+  padding: 24px 0;
+  border-top: 1px solid #36536b42;
+  border-bottom: 1px solid #36536b42;
+}
+.pricing__item {
+  color: #36536b6b;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: 36px;
+}
+
+.pricing__item_active {
+  color: #36536b;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 24px;
+    background-repeat: no-repeat;
+    background-image: url(../img/pricing_icon.svg);
+  }
+}
+.pricing__btn {
+  @include mainBtn_dark;
+  margin-top: 24px;
+}
+@media screen and (max-width: 960px) {
+  .pricing {
+    background-image: url(../img/pricing_back_tab.svg);
+  }
+  .pricing__title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+  }
+  .pricing__block {
+    gap: 10px;
+  }
+  .pricing__box {
+    max-width: 223px;
+    text-align: center;
+  }
+  .pricing__list {
+    text-align: left;
+    padding-left: 45px;
+  }
+  .pricing__sub_title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.185px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .pricing {
+    background-image: url(../img/pricing_back_mob.svg);
+  }
+  .pricing__block {
+    flex-direction: column;
+  }
+  .pricing__box {
+    max-width: 350px;
+    margin-top: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pricing__list {
+    text-align: left;
+    padding-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pricing__list {
+    text-align: left;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
