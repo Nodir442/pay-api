@@ -1,0 +1,126 @@
+.start__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 30px;
+}
+.start__item {
+  max-width: 350px;
+  text-align: center;
+  &::before {
+    content: " ";
+    width: 106px;
+    height: 106px;
+    background-image: url(../img/start_img1.svg);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+  &:nth-child(2)::before {
+    background-image: url(../img/start_img2.svg);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../img/start_img2.svg);
+  }
+}
+.start__sub_title {
+  color: #36536b;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.138px;
+  margin-bottom: 16px;
+}
+.start__text {
+  color: #6c8294;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.115px;
+}
+
+.start__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.start__title {
+  @include mainTitle;
+}
+.start__form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 445px;
+  border-radius: 24px;
+  background-color: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+.start__input {
+  border: none;
+  margin-left: 27px;
+  &::placeholder {
+    color: #36536b;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+}
+.start__btn {
+  @include mainBtn;
+}
+.start__btn2 {
+  @include mainBtn;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .start__list {
+    column-gap: 10px;
+  }
+  .start__content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .start__title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .start__list {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+  .start__title {
+    margin-bottom: 30px;
+  }
+  .start__item {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .start__form {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .start__input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .start__btn {
+    @include mainBtn;
+    display: none;
+  }
+  .start__btn2 {
+    @include mainBtn;
+    display: block;
+  }
+}
